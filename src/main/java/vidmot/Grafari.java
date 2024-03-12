@@ -11,7 +11,7 @@ public class Grafari extends Rectangle {
     private Grafari fxGrafari;
 
     public Grafari() {
-        super(100, 50); // Breidd og hæð eftir þörfum
+        super(40, 20); // Breidd og hæð eftir þörfum
         setStyle("-fx-fill: blue;"); // Stílar fyrir gerð
     }
 

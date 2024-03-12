@@ -1,21 +1,39 @@
 package vidmot;
 
 
-import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
 import javafx.scene.control.RadioMenuItem;
-import javafx.scene.control.ToggleGroup;
 
 public class MenuController {
-    @FXML
-    private ToggleGroup Erfidleikastig;
+    private static GoldController goldController = new GoldController();
 
-    @FXML
-    private void onErfidleikastig() {
-        RadioMenuItem selected = (RadioMenuItem) Erfidleikastig.getSelectedToggle();
-        int selectedDifficulty = Integer.parseInt(selected.getId());
-        System.out.println("Valið erfiðleikastig: " + selectedDifficulty);
-
-        // Call GoldController to pass the selected difficulty level
-        GoldController.getInstance().setDifficultyLevel(selectedDifficulty);
+    public static GoldController getGoldController() {
+        if (goldController == null) {
+            goldController = new GoldController();
+        }
+        return goldController;
     }
+
+    public void setController(GoldController goldController){
+        this.goldController = goldController;
+    }
+
+    public void onErfidleikastig(ActionEvent actionEvent){
+        goldController.setDifficultyLevel
+                (Integer.parseInt(((RadioMenuItem)actionEvent.getSource()).getId()));
+    }
+
+
+
+    public void onByrjaLeik(ActionEvent actionEvent) {
+            goldController.onByrja();
+            goldController.raesaKlukku();
+
+
+    }
+
+    public void onHaettaLeik(ActionEvent actionEvent) {
+        goldController.onHaetta();
+    }
+
 }

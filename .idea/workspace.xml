@@ -73,7 +73,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/vidmot/GoldController.java</url>
-          <line>30</line>
+          <line>72</line>
           <properties class="vidmot.GoldController" method="getInstance">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -82,7 +82,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/vidmot/GoldController.java</url>
-          <line>72</line>
+          <line>132</line>
           <properties class="vidmot.GoldController" method="getOrvatakkar">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

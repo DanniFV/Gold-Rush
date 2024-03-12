@@ -15,7 +15,7 @@ public class GoldApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(GoldApplication.class.getResource("gold-rush-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 500);
         GoldController sc = fxmlLoader.getController();
         sc.getOrvatakkar(sc, scene);
         stage.setTitle("Gold Rush Game");

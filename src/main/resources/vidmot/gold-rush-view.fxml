@@ -5,17 +5,23 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.GoldController">
+<?import vidmot.Grafari?>
+<?import com.sun.javafx.charts.Legend?>
+<?import vidmot.Leikbord?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.GoldController">
    <VBox>
     <children>
         <fx:include fx:id="menuStyring" source="menu-view.fxml" />
          <Label fx:id="fxStefna" text="Label" />
-         <Pane fx:id="fxLeikbord" prefHeight="374.0" prefWidth="600.0">
-            <children>
-               <Rectangle fx:id="fxGrafari" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="BLACK" strokeType="INSIDE" width="40.0" x="100.0" y="100.0" />
-            </children>
-         </Pane>
+            <Leikbord fx:id="fxLeikbord">
+                <children>
+                    <Grafari fx:id="fxGrafari" x="200" y="200"/>
+                </children>
+            </Leikbord>
     </children>
    </VBox>
+   <Label fx:id="fxTimiEftir" alignment="CENTER" contentDisplay="TOP" layoutX="538.0" layoutY="443.0" prefHeight="59.0" prefWidth="62.0" text="0" />
+   <Label fx:id="fxStig" alignment="CENTER" contentDisplay="TOP" layoutX="-1.0" layoutY="443.0" prefHeight="59.0" prefWidth="153.0" text="Stigin : " />
+   <Label alignment="CENTER_RIGHT" layoutX="441.0" layoutY="443.0" prefHeight="59.0" prefWidth="97.0" text="Tími :" />
 
 </Pane>

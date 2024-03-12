@@ -2,10 +2,8 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.layout.*?>
 
-<fx:root type="javafx.scene.layout.Pane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="vidmot.GoldController">
-    <Rectangle fx:id="" width="100.0" height="50.0" style="-fx-fill: blue;" />
-</fx:root>
+<fx:root type="javafx.scene.shape.Rectangle" xmlns:fx="http://javafx.com/fxml" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="10.0" stroke="BLACK" strokeType="INSIDE" width="20.0" x="0.0" y="0.0" />
